@@ -71,6 +71,7 @@ The model achieved a **Test R² of approximately 69.8%** on unseen test data.
 
 * Python
 * Pandas
+* NUMPY
 * Scikit-learn
 * Category Encoders
 * Jupyter Notebook
