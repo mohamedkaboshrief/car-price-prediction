@@ -8,6 +8,12 @@ The project covers an end-to-end machine learning workflow, including data prepr
 
 The goal of this project is to build a regression model capable of predicting the price of a used car based on its available features.
 
+## Dataset
+
+The dataset used in this project is the **Car Price Prediction Challenge** dataset from Kaggle.
+
+**Source:** [Car Price Prediction Challenge](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge/data)
+
 ## Data Preprocessing
 
 The project includes several data preprocessing and feature engineering steps:
@@ -35,18 +41,18 @@ Eight regression models were evaluated using **5-Fold Cross-Validation** with **
 
 ### Cross-Validation Results
 
-| Model                         | Mean CV R² |
-| ----------------------------- | ---------: |
-| Linear Regression             |     0.2623 |
-| SGD Regressor                 |  -2.49e+29 |
-| Lasso Regression              |     0.2624 |
-| Ridge Regression              |     0.2624 |
-| **Random Forest Regressor**   | **0.7447** |
-| Gradient Boosting Regressor   |     0.6531 |
-| Decision Tree Regressor       |     0.6020 |
-| K-Nearest Neighbors Regressor |     0.3587 |
+| **Model**                     | **Mean CV R²** |
+| ----------------------------- | -------------: |
+| Linear Regression             |         0.2623 |
+| SGD Regressor                 |      -2.49e+29 |
+| Lasso Regression              |         0.2624 |
+| Ridge Regression              |         0.2624 |
+| **Random Forest Regressor**   |     **0.7447** |
+| Gradient Boosting Regressor   |         0.6531 |
+| Decision Tree Regressor       |         0.6020 |
+| K-Nearest Neighbors Regressor |         0.3587 |
 
-Based on the cross-validation results, **Random Forest Regressor** achieved the highest mean R² and was selected for further hyperparameter tuning.
+Based on the cross-validation results, **Random Forest Regressor** achieved the highest mean R² among the evaluated models and was selected for further hyperparameter tuning.
 
 ## Hyperparameter Tuning
 
@@ -85,7 +91,7 @@ R² = 0.7431
 
 The tuned Random Forest Regressor was evaluated on the test set.
 
-| Metric                |         Score |
+| **Metric**            |     **Score** |
 | --------------------- | ------------: |
 | Train R²              |        0.9394 |
 | Test R²               |    **0.7523** |
